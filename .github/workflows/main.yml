@@ -13,3 +13,4 @@ jobs:
           echo "REPO_NAME=${{ github.event.repository.name }}" >> $GITHUB_ENV
           cd ../
           echo "repo name: ${{ env.REPO_NAME }}"
+          echo "direct reference to stupid var: ${{ github.event.repository.name }}"
