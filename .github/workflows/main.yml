@@ -12,5 +12,4 @@ jobs:
         run: |
           echo "REPO_NAME=${{ github.event.repository.name }}" >> $GITHUB_ENV
           cd ../
-          zip -r "${{ env.REPO_NAME }}.zip" "./${{ env.REPO_NAME }}/"
-          print "${{ env.REPO_NAME }}"
+          print "repo name: ${{ env.REPO_NAME }}"
